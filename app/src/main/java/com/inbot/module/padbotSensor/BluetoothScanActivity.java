@@ -33,6 +33,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.inbot.module.padbotSensor.listener.BluetoothListener;
+
 @SuppressLint("NewApi")
 public class BluetoothScanActivity extends Activity {
 	
@@ -43,7 +45,7 @@ public class BluetoothScanActivity extends Activity {
 	private Handler robotSearchHandler;
 	private boolean mScanning;
 	private BluetoothDeviceAdapter bluetoothDeviceAdapter;
-	
+	private BluetoothListener bluetoothListener;
 	private Handler connectedHandler;
 	private Handler disconnectedHandler;
 	
@@ -131,14 +133,14 @@ public class BluetoothScanActivity extends Activity {
              public void onItemClick(AdapterView<?> arg0,View arg1, int arg2, long arg3) {   
 
                  connectDevice = deviceList.get(arg2);
-				 SendDevice();
-				 OpenOtherActivity();
-				/* Intent intent = new Intent();
-             	 intent.setClass(BluetoothScanActivity.this, BluetoothControlActivity.class);
+				 BluetoothService.getInstance().connect(connectDevice.getAddress(), bluetoothListener);
+                 Toast.makeText(BluetoothScanActivity.this,"Connect to Padbot",Toast.LENGTH_LONG).show();
+				 Intent intent = new Intent();
+             	 intent.setClass(BluetoothScanActivity.this, SensorActivity.class);
              	 Bundle mBundle = new Bundle();
 	   		     mBundle.putParcelable("connectDevice", connectDevice);
 	   		     intent.putExtras(mBundle);
-             	 startActivityForResult(intent, 0);*/
+             	 startActivityForResult(intent, 0);
              }
 		});
 	}
@@ -279,17 +281,6 @@ public class BluetoothScanActivity extends Activity {
         bluetoothDeviceAdapter.notifyDataSetChanged();
     }
 
-	private void OpenOtherActivity(){
-		Intent back = new Intent();
-		back.setComponent(new ComponentName("edu.scut.dingo.dingoApp",
-				"edu.scut.dingo.dingoApp.MainActivity"));
-		back.setAction("android.intent.action.MAIN");
-		back.addCategory("android.intent.category.LAUNCHER");
-		back.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-		startActivity(back);
-	}
-
-
 	/** Messenger for communicating with the service. */
 	Messenger mService = null;
 
@@ -317,26 +308,10 @@ public class BluetoothScanActivity extends Activity {
 			mBound = false;
 		}
 	};
-	public void SendDevice() {
-		if (!mBound) return;
-		// Create and send a message to the service, using a supported 'what' value
-		Message msg = Message.obtain(null, MessengerService.MSG_SPEED,0, 0);
-
-		msg.obj = connectDevice;
-
-		//.out.println("1"+speedString);
-		try {
-			mService.send(msg);
-		} catch (RemoteException e) {
-			e.printStackTrace();
-		}
-	}
 
 	@Override
 	protected void onStart() {
 		super.onStart();
-		bindService(new Intent(this, MessengerService.class), mConnection,
-				Context.BIND_AUTO_CREATE);
 
 	}
 

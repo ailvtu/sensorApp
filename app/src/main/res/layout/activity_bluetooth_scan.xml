@@ -12,7 +12,7 @@
         <Button 
 	        android:id="@+id/bluetoot_scan_button"
 	        android:layout_width="match_parent"
-	        android:layout_height="50dp"
+	        android:layout_height="100dp"
 	        android:gravity="center"
 	        android:text="@string/scan_robot"/>
     </LinearLayout>

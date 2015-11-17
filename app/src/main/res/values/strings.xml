@@ -101,5 +101,9 @@
     <string name="button_start_autocharge">begin autocharge</string>
     
     <string name="button_stop_autocharge">stop autocharge</string>
+    <string name="title_activity_sensor">SensorActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
     
 </resources>
