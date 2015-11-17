@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="app_name">DingoApp</string>
+    
+    <string name="scan_robot">搜索机器人</string>
+    
+    <string name="bluetooth_address">蓝牙地址:</string>
+    
+    <string name="connection_status">链接状态:</string>
+    
+    <string name="init_failed">初始化失败</string>
+    
+    <string name="main_myrobot_need_android_43_to_support">连接机器人需要安卓4.3或以上版本的支持</string>
+    
+    <string name="robot_state_connected">已连接</string>
+    
+    <string name="robot_state_disconnected">未连接</string>
+    
+    <string name="robot_name">机器人名称：</string>
+    
+    <string name="button_connect">连接机器人</string>
+    
+    <string name="button_disconnect">断开机器人连接</string>
+    
+    <string name="robot_address">地址：</string>
+    
+    <string name="button_stop">停止</string>
+    
+    <string name="button_forward">向前</string>
+    
+    <string name="button_backward">向后</string>
+    
+    <string name="button_left">向左</string>
+    
+    <string name="button_right">向右</string>
+    
+    <string name="button_froward_left_one">前进左偏1档</string>
+    
+    <string name="button_froward_left_two">前进左偏2档</string>
+    
+    <string name="button_froward_left_three">前进左偏3档</string>
+    
+    <string name="button_froward_left_four">前进左偏4档</string>
+    
+    <string name="button_froward_right_one">前进右偏1档</string>
+    
+    <string name="button_froward_right_two">前进右偏2档</string>
+    
+    <string name="button_froward_right_three">前进右偏3档</string>
+    
+    <string name="button_froward_right_four">前进右偏4档</string>
+    
+    <string name="button_backward_left_one">后退左偏1档</string>
+    
+    <string name="button_backward_left_two">后退左偏2档</string>
+    
+    <string name="button_backward_left_three">后退左偏3档</string>
+    
+    <string name="button_backward_left_four">后退左偏4档</string>
+    
+    <string name="button_backward_right_one">后退右偏1档</string>
+    
+    <string name="button_backward_right_two">后退右偏2档</string>
+    
+    <string name="button_backward_right_three">后退右偏3档</string>
+    
+    <string name="button_backward_right_four">后退右偏4档</string>
+    
+    <string name="button_up_header">抬头</string>
+    
+    <string name="button_down_header">低头</string>
+    
+    <string name="button_open_infra">打开红外</string>
+    
+    <string name="button_close_infra">关闭红外</string>
+    
+    <string name="button_speed_35">慢</string>
+    
+    <string name="button_speed_40">中</string>
+    
+    <string name="button_speed_45">快</string>
+    
+    <string name="button_search_infra">查询红外距离</string>
+    
+    <string name="infra_value">红外距离：</string>
+    
+    <string name="button_search_voltage">查询电压</string>
+    
+    <string name="voltage_value">电压值：</string>
+    
+    <string name="button_search_robot_version">查询机器人版本号</string>
+    
+    <string name="version_value">版本号：</string>
+    
+    <string name="button_search_robot_speed">查询机器人速度</string>
+    
+    <string name="speed_value">转数：</string>
+    
+    <string name="button_start_autocharge">开始自动充电</string>
+    
+    <string name="button_stop_autocharge">结束自动充电</string>
+    
+    <string name="button_back">返回上一页</string>
+
+</resources>

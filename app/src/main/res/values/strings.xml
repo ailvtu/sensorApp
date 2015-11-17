@@ -1,0 +1,105 @@
+<resources>
+
+    <string name="app_name">dingoApp</string>
+    
+    <string name="scan_robot">scan robot</string>
+    
+    <string name="init_failed">initialize failed</string>
+    
+    <string name="main_myrobot_need_android_43_to_support">Connecting the robot needs to support Android 4.3 version</string>
+    
+    <string name="robot_state_connected">connected</string>
+    
+    <string name="robot_state_disconnected">disconnected</string>
+    
+    <string name="robot_name">robot name ：</string>
+    
+    <string name="bluetooth_address">bluetooth address:</string>
+    
+    <string name="connection_status">connection status:</string>
+    
+    <string name="button_connect">robot connect</string>
+    
+    <string name="button_disconnect">robot disconnect</string>
+    
+    <string name="robot_address">robot address ：</string>
+    
+    <string name="button_stop">stop</string>
+    
+    <string name="button_forward">forward</string>
+    
+    <string name="button_backward">backward</string>
+    
+    <string name="button_left">turn left</string>
+    
+    <string name="button_right">turn right</string>
+    
+    <string name="button_froward_left_one">forward left 1</string>
+    
+    <string name="button_froward_left_two">forward left 2</string>
+    
+    <string name="button_froward_left_three">forward left 3</string>
+    
+    <string name="button_froward_left_four">forward left 4</string>
+    
+    <string name="button_froward_right_one">forward right 1</string>
+    
+    <string name="button_froward_right_two">forward right 2</string>
+    
+    <string name="button_froward_right_three">forward right 3</string>
+    
+    <string name="button_froward_right_four">forward right 4</string>
+    
+    <string name="button_backward_left_one">backward left 1</string>
+    
+    <string name="button_backward_left_two">backward left 2</string>
+    
+    <string name="button_backward_left_three">backward left 3</string>
+    
+    <string name="button_backward_left_four">backward left 4</string>
+    
+    <string name="button_backward_right_one">backward right 1</string>
+    
+    <string name="button_backward_right_two">backward right 2</string>
+    
+    <string name="button_backward_right_three">backward right 3</string>
+    
+    <string name="button_backward_right_four">backward right 4</string>
+    
+    <string name="button_up_header">head rise</string>
+    
+    <string name="button_down_header">head down</string>
+    
+    <string name="button_open_infra">infrared on</string>
+    
+    <string name="button_close_infra">infrared off</string>
+    
+    <string name="button_speed_35">low speed</string>
+    
+    <string name="button_speed_40">normal speed</string>
+    
+    <string name="button_speed_45">high speed</string>
+    
+    <string name="button_search_infra">get infrared instace</string>
+    
+    <string name="infra_value">infrared value ：</string>
+    
+    <string name="button_search_voltage">get voltage</string>
+    
+    <string name="voltage_value">voltage value ：</string>
+    
+    <string name="button_search_robot_version">get version</string>
+    
+    <string name="version_value">version ：</string>
+    
+    <string name="button_search_speed">get speed</string>
+    
+    <string name="speed_value">speed value ：</string>
+    
+    <string name="button_back">back</string>
+    
+    <string name="button_start_autocharge">begin autocharge</string>
+    
+    <string name="button_stop_autocharge">stop autocharge</string>
+    
+</resources>
